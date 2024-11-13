@@ -1,0 +1,383 @@
+@charset "utf-8";
+
+#c_about .cinner {
+  display: flex;
+  justify-content: space-between;
+}
+#main_info {
+  flex: 1 0 auto;
+  width: 300px;
+  height: calc(100vh - 220px);
+  margin-right: 20px;
+  padding: 40px 33px;
+  border: 1px solid #e1e0de;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background: #fff;
+  position: sticky;
+  top: 40px;
+  left: 0;
+  box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.1);
+}
+#main_info .profile_pic {
+  width: 234px;
+  height: 234px;
+  margin-bottom: 70px;
+  border-radius: 50%;
+  background: #bfe7f9;
+  position: relative;
+}
+#main_info .profile_pic::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 10px;
+  background: url(../../public/images/icon_spr.png) no-repeat 0 -64px;
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  transform: translate(-50%, 0);
+}
+#main_info .minfo_cont .minfo_title {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+#main_info .minfo_cont .minfo_list li .tag_title {
+  margin-bottom: 12px;
+  color: #8e8980;
+  font-size: 0.88em;
+  font-weight: 600;
+}
+#main_info .minfo_cont .minfo_list li .tag_cont {
+  margin-bottom: 20px;
+  padding: 8px 20px;
+  border: 1px solid #e1e0de;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #f9fafc;
+  font-size: 1.13em;
+}
+
+#main_cont {
+  width: calc(100% - 360px);
+  padding: 0 30px;
+}
+#main_cont .info_sec {
+  margin-bottom: 40px;
+}
+#main_cont .info_title {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+#main_cont .intro_box {
+  padding: 30px;
+  border: 1px solid #e1e0de;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.1);
+}
+#main_cont .list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: -10px 0;
+}
+#main_cont .list li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 16px 40px;
+  border: 1px solid #e1e0de;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.1);
+}
+#main_cont .list.col1 li {
+  width: 100%;
+}
+#main_cont .list.col2 {
+  justify-content: space-between;
+}
+#main_cont .list.col2 li {
+  width: calc(50% - 10px);
+}
+#main_cont .list li .icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin-right: 35px;
+  background: url(../../public/images/icon_spr.png) no-repeat;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+#main_cont .list li .cont_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 121px);
+}
+#main_cont .list li .txt_box {
+  font-weight: 500;
+}
+#main_cont .list li .txt_box .tit {
+  margin-bottom: 2px;
+  font-size: 1.25em;
+}
+#main_cont .list li .txt_box .txt {
+  color: #565656;
+}
+#main_cont .list li .date_box {
+  font-weight: 500;
+}
+#main_cont .list li .date_box .tit {
+  font-size: 1.13em;
+}
+#main_cont .list li .date_box .txt {
+  color: #565656;
+  text-align: right;
+}
+#main_cont .skill_box ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#main_cont .skill_box ul li {
+  width: calc(50% - 20px);
+  min-height: 116px;
+  margin: 10px 0;
+  padding: 20px 20px 20px 40px;
+  border: 1px solid #e1e0de;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background: #fff;
+  position: relative;
+  box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.1);
+}
+#main_cont .skill_box ul li::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: calc(100% - 40px);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#main_cont .skill_box ul li:nth-child(1)::before {
+  background: #31a8ff;
+}
+#main_cont .skill_box ul li:nth-child(2)::before {
+  background: #f39b1a;
+}
+#main_cont .skill_box ul li:nth-child(3)::before {
+  background: #d55c36;
+}
+#main_cont .skill_box ul li:nth-child(4)::before {
+  background: #e9c04b;
+}
+#main_cont .skill_box ul li:nth-child(5)::before {
+  background: #61dafb;
+}
+#main_cont .skill_box ul li:nth-child(3)::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: calc((100% - 40px) / 2);
+  background: #3472b5;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+#main_cont .skill_box ul li .tit {
+  margin-bottom: 5px;
+  font-size: 1.13em;
+  font-weight: 500;
+}
+#main_cont .career_box li .icon {
+  background-position: 0 -84px;
+}
+#main_cont .edu_box li .icon {
+  background-position: -74px -84px;
+}
+#main_cont .certif_box li .icon {
+  background-position: -148px -84px;
+}
+
+@media all and (max-width: 1599px) {
+  #main_cont .list.col2 li {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 1399px) {
+  #c_about .cinner {
+    flex-direction: column;
+  }
+  #main_info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 40px;
+    padding: 30px;
+    position: relative;
+    top: 0;
+  }
+  #main_info .profile_pic {
+    width: 186px;
+    height: 186px;
+    margin-bottom: 0;
+  }
+  #main_info .minfo_cont {
+    width: calc(100% - 206px);
+  }
+  #main_info .minfo_cont .minfo_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  #main_info .minfo_cont .minfo_list li {
+    width: calc(50% - 20px);
+    margin: 0 10px;
+  }
+  #main_info .minfo_cont .minfo_list li:last-child {
+    width: 100%;
+  }
+  #main_info .minfo_cont .minfo_list li .tag_title {
+    margin-bottom: 4px;
+  }
+  #main_info .minfo_cont .minfo_list li .tag_cont {
+    margin-bottom: 10px;
+  }
+
+  #main_cont {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  #main_info .profile_pic {
+    width: 146px;
+    height: 146px;
+  }
+  #main_info .minfo_cont {
+    width: calc(100% - 166px);
+  }
+  #main_cont .list li {
+    padding: 16px 20px;
+  }
+  #main_cont .list li .icon {
+    margin-right: 25px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #main_info {
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  #main_cont .info_sec {
+    margin-bottom: 20px;
+  }
+  #main_cont .intro_box {
+    border-radius: 10px;
+  }
+  #main_cont .list li {
+    padding: 16px 20px;
+    border-radius: 10px;
+  }
+  #main_cont .list li .icon {
+    width: 54px;
+    height: 54px;
+    margin-right: 20px;
+    background-size: 178px;
+  }
+  #main_cont .list li .cont_box {
+    width: calc(100% - 74px);
+  }
+  #main_cont .skill_box ul li {
+    width: calc(50% - 10px);
+    border-radius: 10px;
+  }
+  #main_cont .career_box li .icon {
+    background-position: 0 -70px;
+  }
+  #main_cont .edu_box li .icon {
+    background-position: -62px -70px;
+  }
+  #main_cont .certif_box li .icon {
+    background-position: -124px -70px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  #main_info {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 20px;
+  }
+  #main_info .profile_pic {
+    width: 82px;
+    height: 82px;
+    margin-bottom: 15px;
+  }
+  #main_info .profile_pic::after {
+    width: 40px;
+    height: 5px;
+    background-size: 121px;
+    background-position-y: -37px;
+    bottom: -15px;
+  }
+  #main_info .minfo_cont {
+    width: 100%;
+  }
+  #main_info .minfo_cont .minfo_title {
+    margin-bottom: 5px;
+  }
+  #main_info .minfo_cont .minfo_list li {
+    width: calc(50% - 10px);
+    margin: 0 5px;
+  }
+  #main_info .minfo_cont .minfo_list li .tag_cont {
+    padding: 8px 10px;
+    font-size: 1em;
+  }
+  #main_cont .intro_box {
+    padding: 16px 20px;
+  }
+  #main_cont .list li {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 20px;
+  }
+  #main_cont .list li .icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 0;
+    margin-bottom: 8px;
+    background-size: 149px;
+  }
+  #main_cont .list li .cont_box {
+    width: 100%;
+  }
+  #main_cont .list li .txt_box .tit {
+    line-height: 1.2;
+  }
+  #main_cont .skill_box ul li {
+    width: 100%;
+    min-height: auto;
+  }
+  #main_cont .career_box li .icon {
+    background-position: 0 -59px;
+  }
+  #main_cont .edu_box li .icon {
+    background-position: -53px -59px;
+  }
+  #main_cont .certif_box li .icon {
+    background-position: -106px -59px;
+  }
+}

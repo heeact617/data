@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+/* ******************* *
+* Container 공통 부분
+* ******************* */
+#container {
+  width: calc(100% - 300px);
+  max-height: 100vh;
+  overflow-y: auto;
+}
+.cnavi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.cnavi .page_title {
+  display: flex;
+  align-items: center;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+.cnavi .page_title::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background: url(../../public/images/common_spr.png) no-repeat 0 -72px;
+}
+.cnavi .page_link {
+  display: flex;
+}
+.cnavi .page_link li {
+  margin-left: 10px;
+}
+.cnavi .page_link a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 36px;
+  padding: 0 11px 0 18px;
+  border: 1px solid #1d1d1f;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background: #fff;
+  font-weight: 700;
+}
+.cnavi .page_link a::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 13px;
+  background: url(../../public/images/common_spr.png) no-repeat -27px -72px;
+}
+
+/* ******************* *
+* Contents 공통 부분
+* ******************* */
+#contents {
+  min-height: calc(100vh - 60px);
+  padding-bottom: 70px;
+  border-radius: 20px 0 0 0;
+  border-top: 1px solid #d9dbe0;
+  border-left: 1px solid #d9dbe0;
+  box-sizing: border-box;
+  background: #f4f9fd;
+  position: relative;
+  left: -1px;
+}
+.cinner {
+  height: 100%;
+  margin: 0 80px;
+}
+.content_title {
+  margin: 20px 0;
+  font-size: 2.5em;
+}
+
+@media all and (max-width: 1399px) {
+  .cinner {
+    margin: 0 60px;
+  }
+}
+
+@media all and (max-width: 1199px) {
+  #container {
+    width: 100%;
+    max-height: none;
+    overflow-y: initial;
+  }
+  .cnavi {
+    height: 45px;
+  }
+  .cnavi .page_link {
+    display: none;
+  }
+  #contents {
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .cinner {
+    margin: 0 30px;
+  }
+  .content_title {
+    font-size: 2em;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .cinner {
+    margin: 0 20px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .cinner {
+    margin: 0 15px;
+  }
+}

@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+.card {
+  width: calc(33.333% - 20px);
+  margin: 15px 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.1);
+}
+.card .img_wrap {
+  margin-bottom: 15px;
+  position: relative;
+}
+.card .img_wrap .card_img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.card .img_wrap .copy_tag {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+.card .img_wrap .copy_tag span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  height: 34px;
+  border-radius: 17px;
+  color: #fff;
+  font-size: 0.88em;
+}
+.card .img_wrap .copy_tag.company span {
+  background: #00a0e8;
+}
+.card .img_wrap .copy_tag.personal span {
+  background: #e85600;
+}
+.card .cont_wrap {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.card .cont_wrap .tit {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+.card .cont_wrap .desc {
+  font-size: 0.94em;
+}
+.card .cont_wrap .txt {
+  color: #565656;
+  font-size: 0.88em;
+}
+.card .cont_wrap .txt span {
+  position: relative;
+  margin-right: 5px;
+  padding-right: 5px;
+}
+.card .cont_wrap .txt span::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background: #565656;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.card .cont_wrap .tags_wrap {
+  margin: 20px -3px 15px;
+}
+.card .cont_wrap .tags_wrap .tag {
+  margin: 0 3px;
+  color: #565656;
+}
+.card .cont_wrap .btns_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card .cont_wrap .btns_wrap .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: #f9fafc;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.card .cont_wrap .btns_wrap .btn_w1 {
+  width: 100%;
+}
+.card .cont_wrap .btns_wrap .btn_w2 {
+  width: calc(50% - 5px);
+  margin-bottom: 10px;
+}
+.card .cont_wrap .btns_wrap .btn.report {
+  background: #00a0e8;
+  color: #fff;
+}
+.card .cont_wrap .btns_wrap .btn.site {
+  border: 0;
+  background: #0ec6dc;
+  color: #fff;
+}
+.card .cont_wrap .btns_wrap .btn.close {
+  background: #eaedf4;
+  color: #aeaeae;
+  cursor: not-allowed;
+}
+.card .cont_wrap .btns_wrap .btn.demo {
+  background: #00a0e8;
+  color: #fff;
+}
+.card .cont_wrap .btns_wrap .btn.github {
+  background: #373f57;
+  color: #fff;
+}
+.card .cont_wrap .btns_wrap .btn.review {
+  border: 1px solid #e1e0de;
+  background: #f9fafc;
+}
+.card .cont_wrap .btns_wrap .btn:hover,
+.card .cont_wrap .btns_wrap .btn:focus {
+  filter: grayscale(0.5);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media all and (max-width: 1024px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media all and (max-width: 640px) {
+  .card {
+    width: 100%;
+  }
+}
